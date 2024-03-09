@@ -5,7 +5,7 @@ import CounterClass from './ClassComponents';
 import CounterFunction from './FunctionComponents';
 import UseState from './UseState';
 import FetchUserDetails from './FetchUserDetails';
-import { ParentComponent } from './ParentComponent';
+import {ParentComponent} from './ParentComponent';
 import Component1 from './UseContext';
 import Component1PropDrilling from './PropDrilling';
 import Header from './Header';
@@ -13,7 +13,9 @@ import HigherOrder from './HigherOrderComponent';
 import FetchData from './fetchData';
 import AxiosFetch from './AxiosFetch';
 import ChildComponent from './ChildComponent';
-import { EventHandlers } from './EventHandlers';
+import {EventHandlers}  from './EventHandlers';
+import UseRefComponent from './UseRefComponent';
+
 
 function App() {
   
@@ -35,6 +37,7 @@ function App() {
           <li><Link to="/axios">AxiosFetch</Link></li>
           <li><Link to="/child">Child Component</Link></li>
           <li><Link to="/event">Event Handlers</Link></li>
+          <li><Link to="/useref">use Ref</Link></li>
         </ul>
       </nav>
       <Routes>      
@@ -51,6 +54,7 @@ function App() {
           <Route path="axios" element={<AxiosFetch />} />     
           <Route path='child'element={<ChildComponent />} />
           <Route path='event' element={<EventHandlers />} />
+          <Route path='useref' element={<UseRefComponent />} />
 
       </Routes>            
       </BrowserRouter>
